@@ -11,6 +11,7 @@ public class APITesting {
     @BeforeTest
     public void setUP(){
         RestAssured.baseURI = "http://api.citybik.es/v2/networks";
+
     }
     @Test
     public void testLocationAPI()

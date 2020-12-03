@@ -16,6 +16,7 @@ public class APITesting {
     @Test
     public void testLocationAPI()
     {
+        
         Response response = RestAssured.given().when().get("visa-frankfurt?fields=location").then().extract().response();
         Assert.assertEquals(200, response.statusCode(), "Status Code doesn't match");
         String responseString = response.asString();
